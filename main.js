@@ -5,7 +5,15 @@ const pImg = document.getElementById("p-img")
 const prvBtn = document.querySelector(".prev-btn")
 const nextBtn = document.querySelector(".next-btn")
 
+
 const project = [
+    {
+        imgLink: '/imgs/p4.png',
+        title: 'Drag and drop gallery App',
+        brief: 'Allowing users to rearrange images and drap&drop',
+        link: 'https://dribbble.com/shots/17236464-Neobank-Landingpage-Hero/attachments/12341718?mode=media'
+    },
+    
     {
         imgLink: '/imgs/p1.jpeg',
         title: 'Fintech App',
@@ -13,23 +21,20 @@ const project = [
         link: 'https://dribbble.com/shots/17236464-Neobank-Landingpage-Hero/attachments/12341718?mode=media'
     },
 
-    {
-        imgLink: '/imgs/p4.png',
-        title: 'Drag and drop gallery App',
-        brief: 'Allowing users to rearrange images and drap&drop',
-        link: 'https://dribbble.com/shots/17236464-Neobank-Landingpage-Hero/attachments/12341718?mode=media'
-    }
+    
 ]
 
 let currentIndex = 0;
 
 const swipeThrough = (btn) => {
+    console.log(currentIndex)
+    
     if(btn === 'next') {
-        currentIndex++
         if(currentIndex >= project.length) return
+        currentIndex++
     } else if(btn === 'prev') {
-        currentIndex--
         if(currentIndex <= 0) return
+        currentIndex--
     }
     
     pTitle.textContent = project[currentIndex].title
@@ -37,7 +42,7 @@ const swipeThrough = (btn) => {
     pImg.src = project[currentIndex].imgLink
 }
 
-swipeThrough('next')
+// swipeThrough('next')
 
 prvBtn.addEventListener("click", () => {
     console.log("prv")
