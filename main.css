@@ -15,6 +15,7 @@ font-family: 'Raleway', sans-serif; */
 body {
     font-family: "Raleway", sans-serif;
     width: 100vw;
+    overflow-x: hidden;
 }
 
 .bg-color {
@@ -135,6 +136,7 @@ nav .bottom-nav {
 
 .about-me-project {
     margin-top: 8em;
+    margin-left: 2em;
     display: flex;
     flex-direction: column;
     gap: 3em;
