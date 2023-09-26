@@ -273,6 +273,33 @@ section.stacks {
     height: auto;
     border-radius: 30px;
     overflow: hidden;
+    position: relative;
+}
+
+.project-image .btn {
+    background-color: rgb(85, 39, 39);
+    font-size: 1rem;
+    color: #ffffff;
+    padding: 1.5em;
+    border-radius: 50%;
+}
+
+.prev-btn {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 9999;
+}
+
+.next-btn {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    z-index: 9999;
+}
+
+.project-image .img-container {
+    
 }
 
 .project-image img {
@@ -356,6 +383,14 @@ section.stacks {
     .about-me-project .project {
         border-radius: 30px;
         width: 100%;
+    }
+
+    .project-image .btn {
+        background-color: rgb(85, 39, 39);
+        font-size: .9rem;
+        color: #ffffff;
+        padding: .7em;
+        border-radius: 50%;
     }
 
 }

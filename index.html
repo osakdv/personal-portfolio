@@ -10,7 +10,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
-    <script src="main.js"></script>
+    <script src="main.js" defer></script>
   </head>
   <body class="bg-color">
     <header>
@@ -140,18 +140,25 @@
         <div class="mp-content">
             <div class="mp-about">
               <div class="mp-title">
-                <h2>Drag and drop gallery</h2>
-                <p>Drag and drop application, that allow for drag and drop</p>
+                <h2 id="p-title">Drag and drop gallery</h2>
+                <p id="p-brief">Drag and drop application, that allow for drag and drop</p>
               </div>
     
               <div class="mp-link">
-                <a href="#">Learn to this project</a>
+                <a href="#" id="p-link">Learn to this project</a>
                 <span><i class="fa-solid fa-link"></i></span>
               </div>
             </div>
     
             <div class="project-image">
-              <img src="/imgs/p1.jpeg" alt="" />
+                <div class="btn prev-btn"> <i class="fa-solid fa-arrow-left"></i> </div>
+              <div class="img-container">
+                <img src="/imgs/p1.jpeg" alt="project" id="p-img" />
+              </div>
+
+              <div class="btn next-btn">
+                <i class="fa-solid fa-arrow-right"></i>
+              </div>
             </div>
           </div>
       </div>
