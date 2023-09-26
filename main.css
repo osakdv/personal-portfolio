@@ -1,0 +1,359 @@
+@import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500&family=Raleway:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,800&display=swap");
+
+/* font-family: 'Dela Gothic One', cursive;
+font-family: 'Poppins', sans-serif;
+font-family: 'Raleway', sans-serif; */
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+    font-family: "Raleway", sans-serif;
+    width: 100vw;
+}
+
+.bg-color {
+    background-color: #ffffff;
+}
+
+ul.links li {
+  list-style: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: .9rem;
+  margin-top: 9px;
+}
+
+.menu-icon, #open-menu, #close-menu {
+    display: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+nav {
+  padding: 1em 1em 0 1em;
+}
+
+nav .top-nav {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+}
+
+.top-nav .logo {
+  font-size: 1.6rem;
+  font-weight: 600;
+  font-family: "Raleway", sans-serif;
+}
+
+.top-nav ul {
+  display: flex;
+  gap: 3em;
+}
+
+.top-nav .switch-color {
+    width: 65px;
+    height: 32px;
+    border: 2px solid black;
+    border-radius: 55%;
+    display: flex;
+    align-items: center;
+}
+
+.switch-color .switch {
+    height: 80%;
+    width: 50%;
+    background-color: black;
+    border-radius: 100%;
+}
+
+nav .bottom-nav {
+    margin-top: 15px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+}
+
+.bottom-nav .items {
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    padding: 1em 1em;
+    gap: 1.4em;
+}
+
+.bottom-nav .items a {
+    text-transform: uppercase;
+  font-weight: 600;
+  font-size: .9rem;
+}
+
+.bottom-nav .items:nth-child(1) {
+    border-right: none;
+}
+
+.bottom-nav .items:nth-child(2) {
+    border-right: none;
+}
+
+/* marquee */
+.marquee-font {
+    display: flex;
+    gap: 2em;
+    justify-content: flex-start;
+    overflow: hidden;
+    /* background-color: black; */
+    padding: 1em 0em;
+    margin-top: 1em;
+    /* letter-spacing: .5em; */
+}
+
+.marquee-font h1 {
+    font-family: 'Dela Gothic One', cursive;
+    font-size: 5rem;
+    white-space: nowrap;
+    animation: move-rlt 6000ms linear infinite;
+}
+
+@keyframes move-rlt {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.about-me-project {
+    margin-top: 8em;
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    padding: 0 2em;
+}
+
+.about-me-project .about {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.about .about-professional {
+    width: 500px;
+}
+
+.about-current-project {
+    display: flex;
+    gap: .7em;
+    font-size: .9rem;
+}
+
+.about-professional p {
+    margin-top: 1em;
+    color: rgb(31, 31, 31);
+    font-size: .9rem;
+}
+
+.about-me-project .project {
+    border-radius: 30px;
+    width: 40%;
+    height: 500px;
+    background-position: center;
+    /* background-size: cover; */
+    background-repeat: no-repeat;
+    background: url(/imgs/dev-pic.png);
+}
+
+.about-me-project .project img {
+    height: auto;
+}
+
+
+.about-me-project h2 {
+    font-size: 2.5em;
+    /* font-family: 'Dela Gothic One', cursive; */
+}
+
+section.stacks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 6em;
+    padding: 0 2em;
+}
+
+.stacks .top-text h2 {
+    font-family: 'Dela Gothic One', cursive;
+    font-size: 3.5rem;
+}
+
+.top-text .dev-design {
+    margin-top: 1.5em;
+    display: flex;
+    justify-content: center;
+    font-size: .9rem;
+    font-weight: 500;
+    gap: 3em;
+}
+
+.dev-design p.current {
+    border-bottom: 2px solid black;
+}
+
+.stacks .middle {
+    display: flex;
+    justify-content: center;
+    margin-top: 4em;
+    width: 70%;
+}
+
+.stacks .middle ul {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: inherit;
+    
+}
+
+.middle ul li {
+    border: 2px solid black;
+    width: inherit;
+    margin-top: 2em;
+    padding: 1em 1.5em;
+    display: flex;
+    gap: 1em;
+}
+
+.middle ul.stack.display {
+    display: none;
+}
+
+.middle ul.design.display {
+    display: none;
+}
+
+.more-portfolio {
+    margin: 5em 2em 2em 2em;
+}
+
+.more-portfolio .mp-content .mp-about {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.mp-about h2 {
+    font-size: 2.2rem;
+}
+
+.mp-about p {
+    margin-top: 1.7em;
+    font-size: .9rem;
+}
+
+.mp-link a {
+    font-size: .9rem;
+    text-decoration: underline;
+}
+
+.more-portfolio .project-image {
+    margin-top: 2em;
+    width: 100%;
+    height: auto;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.project-image img {
+    width: 100%;
+}
+
+.contact {
+    margin: 5em 2em 3em 2em;
+    width: 100%;
+}
+
+.contact .my-contacts {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.my-contacts li {
+    list-style: none;
+    padding: 2em 2em;
+    border: 2px solid black;
+}
+
+@media screen and (max-width: 600px) {
+    .menu-icon {
+        margin-top: 7px;
+    }
+    
+    .menu-icon, #open-menu {
+        display: block;
+    }
+
+    nav {
+        position: relative;
+        width: 100%;
+    }
+
+    ul.links {
+        display: none;
+        position: absolute;
+        flex-direction: column;
+        margin-top: 2.5em;
+        background-color: rgb(255, 255, 255);
+        width: 100%;
+        margin-left: -1em;
+        text-align: center;
+        padding: 1em;
+    }
+    
+    .bottom-nav {
+        display: flex !important;
+        flex-direction: column;
+    }
+
+    .bottom-nav .items:nth-child(1) {
+        border-right: 2px solid black;
+    }
+    
+    .bottom-nav .items:nth-child(2) {
+        border-right: 2px solid black;
+        border-top: none;
+    }
+
+    .bottom-nav .items:nth-child(3) {
+        border-top: none;
+    }
+      
+    .more-portfolio .mp-content .mp-about {
+        flex-direction: column;
+        /* justify-content: flex-start; */
+        align-items: flex-start;
+    }
+
+    .mp-link {
+        margin-top: 1.4em !important;
+    }
+
+    .stacks .middle {
+        width: 100%;
+    }
+
+    .about-me-project .project {
+        border-radius: 30px;
+        width: 100%;
+    }
+
+}
