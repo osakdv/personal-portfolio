@@ -32,7 +32,7 @@ let currentIndex = 0;
 
 const swipeThrough = (btn) => {
     if(btn === 'next') {
-        if(currentIndex >= project.length) return
+        if(currentIndex >= project.length - 1) return
         currentIndex++
     } else if(btn === 'prev') {
         if(currentIndex <= 0) return
@@ -48,8 +48,8 @@ const swipeThrough = (btn) => {
 
 
 prvBtn.addEventListener("click", () => {
-    console.log("prv")
     swipeThrough('prev')
+    console.log("prv")
 })
 nextBtn.addEventListener("click", () => swipeThrough('next'))
 
